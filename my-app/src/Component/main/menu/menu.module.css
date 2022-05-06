@@ -1,0 +1,32 @@
+:root{
+    --bg-color: #282e39;
+    --component: #2f3542;
+    --subText: #85888f;
+    --title-font: 42px;
+    --bg-font: 32px;
+    --mi-font: 18px;
+    --sm-font: 14px;
+}
+
+.menu{
+    margin-bottom: var(--bg-font);
+}
+
+.label{    
+    font-size: var(--sm-font);
+    margin-bottom: var(--bg-font);
+}
+
+.list{
+    color: var(--subText);
+    font-size: var(--mi-font);    
+    padding: var(--mi-font) 0 var(--mi-font) var(--mi-font);
+    cursor: pointer;
+}
+
+.active, 
+.list:hover{
+    background-color: var(--component);
+    border-radius: var(--sm-font);
+    color: white;
+}

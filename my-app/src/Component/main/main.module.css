@@ -1,0 +1,30 @@
+:root{
+    --bg-color: #282e39;
+    --component: #2f3542;
+    --subText: #85888f;
+    --text: white;
+    --title-font: 42px;
+    --bg-font: 32px;
+    --mi-font: 18px;
+    --sm-font: 14px;
+}
+
+.main{
+    width: 100%;    
+    display: flex;
+}
+
+
+.nav{
+    width: 15%;
+    padding: var(--mi-font);
+}
+
+.content{
+    width: 85%;
+    padding: var(--mi-font);
+}
+
+.container{
+    
+}

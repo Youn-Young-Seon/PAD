@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/fxjs/dist/fx.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script>
+        const createTemplate = (tmpl, base = '#root') => document.querySelector(base).innerHTML = tmpl;
+        const appendTemplate = (tmpl, base = '#root') => {
+            const div = document.createElement('div');
+            div.innerHTML = tmpl;
+            document.querySelector(base).appendChild(div);
+        }
+
+        const btn = `
+            <button class="btn">버튼</button>
+        `;
+
+        const text = `
+            <div>버튼을 붙여보자 !</div>
+        `;
+
+        createTemplate(btn);
+        appendTemplate(text);
+        document.querySelector('.btn').onclick = function(){
+            appendTemplate(test);
+        }
+    </script>
+    <script>
+        const data = [
+            { id: 1, name: "AA", age: 23},
+            { id: 2, name: "BB", age: 13},
+            { id: 3, name: "CC", age: 43},
+            { id: 4, name: "DD", age: 66},
+            { id: 5, name: "EE", age: 75},
+            { id: 6, name: "FF", age: 47}
+        ]
+
+        const add = (a, b) => a + b;
+        const test = _.go(
+            _.map(user => user.age, data),
+            _.filter(age => age > 30),
+            _.reduce(add)
+        );
+    </script>
+</body>
+</html>
