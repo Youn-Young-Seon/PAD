@@ -1,6 +1,6 @@
 import styles from './header.module.css';
 
-export function Header({ setLoginCheck }) {
+function Header({ setLoginCheck }) {
   
     const onClick = (path) => () => setLoginCheck(path);
     console.log('헤더');
@@ -17,3 +17,5 @@ export function Header({ setLoginCheck }) {
       </div>
     )
 }
+
+export { Header }
