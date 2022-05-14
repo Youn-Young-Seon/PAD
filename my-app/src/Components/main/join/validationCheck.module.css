@@ -1,0 +1,23 @@
+:root{
+    --bg-color: #282e39;
+    --component: #2f3542;
+    --subText: #85888f;
+    --text: white;
+    --title-font: 42px;
+    --bg-font: 32px;
+    --mi-font: 18px;
+    --sm-font: 14px;
+}
+.validCheck{
+    position: relative;
+    bottom: 10px;
+    left: 8px;    
+}
+
+.red{
+    color: red;
+}
+
+.teal{
+    color: teal;
+}
