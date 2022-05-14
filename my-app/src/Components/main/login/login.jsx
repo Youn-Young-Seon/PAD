@@ -1,8 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faKey } from "@fortawesome/free-solid-svg-icons";
 import styles from './login.module.css';
+import { Link } from "react-router-dom";
 
-export function Login(){
+export function Login(){    
+
     console.log('로그인');
     return(
         <div className={ styles.login }>
@@ -22,10 +24,12 @@ export function Login(){
                         </div>
                         <div className={ styles.btnBox }>
                             <button type="submit" className={ styles.loginBtn }>SIGN IN</button>
-                            <button 
-                                type="button"
-                                className={ styles.joinBtn }>JOIN
-                            </button>                            
+                            <Link to="/join">
+                                <button 
+                                    type="button"
+                                    className={ styles.joinBtn }>JOIN
+                                </button>
+                            </Link>
                         </div>
                     </form>
                 </div>

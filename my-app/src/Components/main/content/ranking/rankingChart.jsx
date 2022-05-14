@@ -7,7 +7,7 @@ export function RankingChart() {
                 <div className={ styles.chartTitle }>주식 이름</div>
                 <div className={ styles.chartContent }>
                     <div className={ styles.chartSVG }>                                
-                        <svg width="150" height="150">                  
+                        <svg width="150" height="150">
                             <circle fill='#282e39' cx='75' cy="75" r="75"></circle>
                             <circle className={ styles.chartGauge } fill='#2f3542' cx='75' cy="75" r="60"
                                 stroke='teal'
