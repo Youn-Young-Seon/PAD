@@ -4,8 +4,6 @@ import styles from './login.module.css';
 import { Link } from "react-router-dom";
 
 export function Login(){    
-
-    console.log('로그인');
     return(
         <div className={ styles.login }>
             <div className={ styles.title }>
@@ -13,14 +11,14 @@ export function Login(){
             </div>
             <div className={ styles.container }>
                 <div className={ styles.loginContainer }>
-                    <form action="/login" method="POST">
+                    <form action="/api/login" method="POST">
                         <div className={ styles.inputBox }>
                             <span className={ styles.fontSpan }><FontAwesomeIcon icon={faUser} /></span>
-                            <input type="text" placeholder='ID' />
+                            <input type="text" name="userId" placeholder='ID' />
                         </div>
                         <div className={ styles.inputBox }>
                             <span className={ styles.fontSpan }><FontAwesomeIcon icon={faKey} /></span>
-                            <input type="password" placeholder='PW' />
+                            <input type="password" name="password" placeholder='PW' />
                         </div>
                         <div className={ styles.btnBox }>
                             <button type="submit" className={ styles.loginBtn }>SIGN IN</button>
