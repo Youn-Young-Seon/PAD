@@ -3,7 +3,6 @@ import { Menu } from './menu/menu';
 import { Represent } from './content/represent'
 
 export function Main() {
-  console.log('메인');
     return (
       <div className={styles.main}>
         <div className={styles.nav}>
