@@ -1,0 +1,35 @@
+:root{
+    --bg-color: #282e39;
+    --component: #2f3542;
+    --subText: #85888f;
+    --text: white;
+    --title-font: 42px;
+    --bg-font: 32px;
+    --mi-font: 18px;
+    --sm-font: 14px;
+}
+
+.myPageIcon{
+    font-size: var(--bg-font);
+    cursor: pointer;
+}
+
+.myPageBox{
+    position: absolute;   
+    top: 65px; 
+    right: var(--sm-font);
+    width: 150px;
+    background-color: var(--component);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.myPageBox div{
+    padding: 8px;
+    margin: 6px auto;
+    cursor: pointer;
+}
+
+.myPageBox div:hover{
+    background-color: var(--bg-color);
+}
