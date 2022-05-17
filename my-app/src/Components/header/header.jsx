@@ -1,8 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import styles from './header.module.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { MyPage } from './myPage/myPage';
 
 
 function Header({ loginData, setLoginData }) {
@@ -18,11 +17,9 @@ function Header({ loginData, setLoginData }) {
             <h1>Stock</h1>
           </Link>
           { loginData.success ?             
-            <div className={styles.login}><FontAwesomeIcon icon={ faCircleInfo }/>{ loginData.user }님 환영해요. 
-              <div onClick={ logout }>Logout</div>
-            </div> :
+            <MyPage logout={ logout }/> :
             <Link to="/login">
-              <div className={styles.login}>Login</div>
+              <div className={ styles.login }>Login</div>
             </Link>
           }
         </div>
